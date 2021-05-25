@@ -1,0 +1,425 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Камолов Иззатбек </title>
+  </head> 
+ <style>
+ body { background: url(00.jpg);
+  background-size:200%
+ } </style>
+   <body>
+  
+         <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-success mt-2" data-toggle="modal" data-target="#create"><i class="fa fa-plus"></i></button>
+                <table class="table table-striped table-hover mt-2"><tr>
+               Кнопка                                  
+                      <h5>Страны и валюты</h5>
+
+                </tr>
+                    <thead class="thead-dark"> 
+                        <th>Код страны </th>
+                        <th>Страна</th>
+                        <th>Валюта</th>
+                        <th>Президент</th>
+                        <th>Редактор</th>
+                    </thead>
+                    <tbody>
+                                      
+                                       <tr>
+                            <td> UZ</td>
+                            <td>Узбекистан</td>
+                            <td>UZS Узбекский сом</td>
+                            <td>Камолов Иззатбек</td>
+                            <td><a href="?id=1" class="btn btn-success"  data-toggle="modal" data-target="#edit1"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#delete1"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                            <!--Modal edit-->
+                            <div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Изменить запись</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="?id=1" method="post">
+                                        <div class="form-groupp">
+                                            <small>Код страны</small>
+                                            <input type="text" class="form-control" name="Код" value="UZ ">
+                                        </div>
+                                         <div class="form-groupp">
+                                            <small>страна</small>
+                                            <input type="text" class="form-control" name="страна" value="Узбекистан ">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Валюта</small>
+                                            <input type="text" class="form-control" name="Валюта" value="UZS Узбекский сом">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Президент</small>
+                                            <input type="text" class="form-control" name="Президент" value="Камолов Иззатбек">
+                                        </div> 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                    <button type="submit" class="btn btn-primary" name="edit">нельзя изменить этот параметр</button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal edit-->
+                            <!--Modal delete-->
+                            <div class="modal fade" id="delete1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Удалить старану </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?id=1" method="post">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Оставить</button>
+                                    <button type="submit" class="btn btn-danger" name="delete">Ёе нельзя Удалить  </button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                                                                 </tr>
+                            <td> KR</td>
+                            <td>Южная Корея</td>
+                            <td>KRW Южнокорейская вона</td>
+                            <td>Цой Михаил </td>
+                            <td><a href="?id=2" class="btn btn-success"  data-toggle="modal" data-target="#edit2"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#delete2"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                            <!--Modal edit-->
+                            <div class="modal fade" id="edit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Изменить запись</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="?id=2" method="post">
+                                        <div class="form-groupp">
+                                          <small>Код страны</small>
+                                            <input type="text" class="form-control" name="Код" value="KR ">
+                                        </div>
+                                         <div class="form-groupp">
+                                            <small>страна</small>
+                                            <input type="text" class="form-control" name="страна" value="Корея ">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Валюта</small>
+                                            <input type="text" class="form-control" name="Валюта" value="KRW Южнокорейская вона">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Президент</small>
+                                            <input type="text" class="form-control" name="Президент" value="Цой Михаил">
+                                        </div> 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                    <button type="submit" class="btn btn-primary" name="edit">нельзя изменить этот параметр</button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal edit-->
+                            <!--Modal delete-->
+                            <div class="modal fade" id="delete2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Удалить старану </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?id=1" method="post">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Оставить</button>
+                                    <button type="submit" class="btn btn-danger" name="delete">Ёе нельзя Удалить  </button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal delete-->
+                                              
+                                                                                           <tr>
+                            <td>NZ</td>
+                            <td>Новая Зеландия</td>
+                            <td>NZD Новозеландский доллар</td>
+                            <td>Джасинды Ардерн </td>
+                            <td><a href="?id=11" class="btn btn-success"  data-toggle="modal" data-target="#edit11"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#delete11"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                            <!--Modal edit-->
+                            <div class="modal fade" id="edit11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Изменить запись</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="?id=11" method="post">
+                                        <div class="form-groupp">
+                                           <small>Код страны</small>
+                                            <input type="text" class="form-control" name="Код" value="NZ ">
+                                        </div>
+                                         <div class="form-groupp">
+                                            <small>страна</small>
+                                            <input type="text" class="form-control" name="страна" value="Новая Зеландия ">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Валюта</small>
+                                            <input type="text" class="form-control" name="Валюта" value="NZD Новозеландский доллар">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Президент</small>
+                                            <input type="text" class="form-control" name="Президент" value="Джасинды Ардерн ">
+                                        </div> 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                    <button type="submit" class="btn btn-primary" name="edit">Сохранить</button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal edit-->
+                            <!--Modal delete-->
+                            <div class="modal fade" id="delete11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLabel">Удалить старану </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?id=1" method="post">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Оставить</button>
+                                    <button type="submit" class="btn btn-danger" name="delete">Удалить  </button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal delete-->
+                                                <tr>
+                            <td> RU</td>
+                            <td>Россия</td>
+                            <td> RUB Российский рубль4</td>
+                            <td>Владимир Путин</td>
+                            <td><a href="?id=12" class="btn btn-success"  data-toggle="modal" data-target="#edit12"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#delete12"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                            <!--Modal edit-->
+                            <div class="modal fade" id="edit12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Изменить запись</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="?id=12" method="post">
+                                        <div class="form-groupp">
+                                           <small>Код страны</small>
+                                            <input type="text" class="form-control" name="Код" value="RU ">
+                                        </div>
+                                         <div class="form-groupp">
+                                            <small>страна</small>
+                                            <input type="text" class="form-control" name="страна" value="Россия ">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Валюта</small>
+                                            <input type="text" class="form-control" name="Валюта" value="RUB Российский рубль">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Президент</small>
+                                            <input type="text" class="form-control" name="Президент" value="Владимир Путин">
+                                        </div> 
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                    <button type="submit" class="btn btn-primary" name="edit">Сохранить</button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal edit-->
+                            <!--Modal delete-->
+                            <div class="modal fade" id="delete12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Удалить старану </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?id=1" method="post">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Оставить</button>
+                                    <button type="submit" class="btn btn-danger" name="delete">Удалить  </button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal delete-->
+                                                <tr>
+                            <td>    JP</td>
+                            <td>Япония</td>
+                            <td>JPY Японская иена</td>
+                            <td>Нарухито</td>
+                            <td><a href="?id=13" class="btn btn-success"  data-toggle="modal" data-target="#edit13"><i class="fa fa-edit"></i></a>
+                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#delete13"><i class="fa fa-trash-alt"></i></a></td>
+                        </tr>
+                            <!--Modal edit-->
+                            <div class="modal fade" id="edit13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Изменить запись</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="?id=13" method="post">
+                                        <div class="form-groupp">
+                                           <small>Код страны</small>
+                                            <input type="text" class="form-control" name="Код" value="  JP ">
+                                        </div>
+                                         <div class="form-groupp">
+                                            <small>страна</small>
+                                            <input type="text" class="form-control" name="страна" value="Япония ">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Валюта</small>
+                                            <input type="text" class="form-control" name="Валюта" value="JPY Японская иена">
+                                        </div>
+                                        <div class="form-groupp">
+                                            <small>Президент</small>
+                                            <input type="text" class="form-control" name="Президент" value="Нарухито">
+                                        </div> 
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                    <button type="submit" class="btn btn-primary" name="edit">Сохранить</button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <!--Modal delete-->
+                            <div class="modal fade" id="delete13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Удалить старану </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <form action="?id=1" method="post">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Оставить</button>
+                                    <button type="submit" class="btn btn-danger" name="delete">Удалить  </button>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!--Modal delete-->
+                                            </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--Modal create-->
+   
+    <!--Modal create-->
+    <div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Добавить страну </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form action="" method="post">
+                <div class="form-groupp">
+                    <small>Код страны</small>
+                    <input type="text" class="form-control" name="Код"value="Uz TOP 1 ">
+                </div>
+                <div class="form-groupp">
+                    <small>страна</small>
+                    <input type="text" class="form-control" name="страна" >
+                </div>
+                <div class="form-groupp">
+                    <small>Валюта</small>
+                    <input type="text" class="form-control" name="Валюта" >
+                </div> 
+                 <div class="form-groupp">
+                    <small>Президент</small>
+                    <input type="text" class="form-control" name="Президент" >
+                </div> 
+            
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-primary" name="add">Сохранить</button>
+        </form>
+        </div>
+        </div>
+    </div>
+    </div>
+           
+    <!--Modal create-->
+    <!--Modal create-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

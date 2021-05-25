@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finance</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="сайт.css"> 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Slideshow Images</title>
+    <style>
+      body
+      {
+        background-image: url("./dolorbackgraund.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: rgba(207, 162, 119, 0.74);
+      }
+    </style>
+</head>
+<body>
+   
+    <div class="menu-btn">
+		<i class="fas fa-bars fa-2x"></i>
+	</div>    
+    <div class="container">
+        <style>
+            ul li a:hover 
+            {
+             background: #8cd4c5d5;
+             text-decoration: none;
+            }
+        </style>
+        <nav class="main-nav" style="background-color: white;">
+            <a href="index.html"><img src="logo.jpg" class="logo" alt="Bank"></a> 
+            
+            <ul class="main-menu show">
+                <li><a href="https://meshok-monet.net/catalog/monety-rossii-i-sssr"><b>Монеты России и СССР</b></a></li>
+                <li><a href="https://meshok-monet.net/catalog/prodazha-inostrannyh-monet-cennik"><b>Иностранные монеты</b></a></li>
+                <li><a href="https://meshok-monet.net/catalog/banknoty-2"><b>Банкноты</b></a></li>
+                <li><a href="https://meshok-monet.net/skupka-monet"><b>Скупка Монет</b></a></li>
+                <li><a href="videos.html"><b>Страница для развлечения</b></a></li>
+            </ul>
+            <ul class="right-menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+       </nav>
+       <header class="showcase">
+           <img src="mapmoney.jpg" alt="">
+        <a href="https://banknotes.finance.ua/ru/#" class="btn">Страна<i class="fas fa-chevron-right"></i></a>
+    </header>   
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="map.jpg" class="slide" width="500" height="300" />
+        <img src="map2.jpg" class="slide" width="500" height="300" />
+        <img src="mapmoney3.jpg" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+       
+      </div>
+    </div>
+  </div>
+  <br>
+</body>
+</html>
